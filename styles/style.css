@@ -5,11 +5,36 @@
 html {
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke;
+    background-color: whitesmoke
 }
 
 main {
     align-items: center;
+}
+
+.big-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(https://i.etsystatic.com/15389684/r/il/f87a84/1222820842/il_794xN.1222820842_nefu.jpg);
+    opacity: 70%;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 35vh;
 }
 
 header {
@@ -20,9 +45,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-weight: bold;
-}
-
-.wrapper {
 }
 
 .headline {
@@ -68,14 +90,14 @@ li {
     text-decoration: none;
 }
 
-li:hover {
-    text-decoration: underline;
+a, a:visited {
+    color: white;
 }
 
 .getstarted button {
     padding: 12px;
-    background-color: blue;
-    color: yellow;
+    background-color: #eeeeee;
+    color: #36454F;
     border-radius: 40px;
     font-weight: bold;
     font-size: 1rem;
@@ -96,6 +118,7 @@ li:hover {
     flex-direction: row;
     margin: auto auto 2em auto;
     max-width: 50%;
+    min-width: 300px;
 }
 
 .tile {
