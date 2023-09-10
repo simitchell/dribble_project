@@ -5,16 +5,29 @@
 html {
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke
+    background-color: whitesmoke;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    /* max-width: 2400px; */
+    margin: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
 }
 
 .big-image {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
@@ -23,18 +36,14 @@ main {
 }
 
 .overlay {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     background: rgba(0,0,0, 0.65);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    padding-bottom: 35vh;
 }
 
 header {
@@ -53,12 +62,6 @@ header {
     width: 50%;
 }
 
-.getstarted {
-    display: flex;
-    margin: auto;
-    padding: auto;
-}
-
 .openingsection {
     display: flex;
     width: 100;
@@ -71,14 +74,20 @@ header {
 
 .navbar {
     display: flex;
-    width: 65%;
+    /* width: 65%; */
     padding: 10px;
     flex-direction: row;
 }
 
+.getstarted {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    margin: auto;
+}
+
 ul {
     display: inline-block;
-    flex-direction: row;
     justify-content: space-around;
     padding: 10px;
 }
@@ -94,7 +103,7 @@ a, a:visited {
     color: white;
 }
 
-.getstarted button {
+button {
     padding: 12px;
     background-color: #eeeeee;
     color: #36454F;
@@ -104,13 +113,13 @@ a, a:visited {
     border: none;
 }
 
-.headline {
+.chapternav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 30px auto;
-    padding: 0 auto;
     justify-content: center;
     text-align: center;
+    font-weight: bold;
 }
 
 .firstsection {
